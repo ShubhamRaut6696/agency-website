@@ -1,0 +1,456 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@font-face {
+    font-family: "ageo";
+    src: url("../font/AgeoTrial-Medium.ttf"); /* Ensure this path is correct */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none !important;
+}
+
+:root {
+    --roboto-font: "Roboto", sans-serif;
+    --ageo-font: "ageo";
+    --dm-sans: "DM Sans", sans-serif;
+    --primary-color: #FF6600;
+    --white-color: #ffffff;
+    --black-color: #000000;
+}
+
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#main {
+    height: 100%;
+    width: 100%;
+}
+
+/* navbar css started  */
+.navbars {
+    display: flex;
+    justify-content: space-between !important;
+    align-items: center !important;
+}
+
+.login-btn {
+    margin-right: 15px;
+    font-size: 18px;
+    font-family: var(--ageo-font);
+    font-weight: 500 !important;
+    color: var(--black-color);
+}
+
+.primary-btn {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    padding: 10px 30px;
+    border-radius: 10px;
+    font-family: var(--ageo-font);
+    font-weight: 500 !important;
+}
+
+.navbar-nav {
+    gap: 40px !important;
+}
+
+.nav-link {
+    font-size: 18px;
+    font-weight: 500 !important;
+    font-family: var(--ageo-font);
+}
+
+.active {
+    font-weight: 700 !important;
+}
+
+/* banner  css started  */
+.banner-heading {
+    font-size: 70px;
+    font-family: var(--ageo-font);
+    font-weight: 900;
+    color: #0B1B35;
+}
+.growth{
+    position: relative;
+}
+.box-details{
+    position: absolute;
+    top: 100px;
+    left: -20px;
+    width: 275px;
+    height: 73px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 12px;
+}
+.growth-icons{
+    width: 40px;
+    height: 40px;
+}
+.banner-para {
+    font-size: 22px;
+    font-family: var(--ageo-font);
+    font-weight: 500;
+    color: #0B1B35;
+}
+.banner-rightside{
+    position: relative;
+}
+.mans{
+    z-index: 10;
+}
+.lights{
+    position: absolute;
+    bottom: 200px;
+    left: -50px;
+    z-index: -1;
+}
+.happy-clients{
+    position: absolute;
+    bottom: 70px;
+    left: -110px;
+    z-index: -1;
+    padding: 15px 16px;
+    border-radius: 12px;
+}
+.no-clients{
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16.8px;
+}
+.reviews{
+    font-size: 12px;
+    font-weight: 700;
+}
+.reviews span{
+    font-size: 12px;
+    font-weight: 500;
+    color: #8A898E;
+}
+.video-icon {
+    margin-left: 28px;
+    margin-right: 25px;
+}
+
+.video-btn span {
+    font-size: 18px;
+    font-weight: 500;
+    font-family: var(--ageo-font);
+    color: #000000;
+}
+
+/* service section css started  */
+.title-heading {
+    margin-top: 81px;
+    text-align: center;
+    font-family: var(--ageo-font);
+}
+
+.title-head {
+    font-size: 52px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.title-subhead {
+    letter-spacing: 10px;
+    font-family: var(--ageo-font);
+    font-size: 14px;
+    font-weight: 700;
+    color: #8A898E;
+}
+
+.service-box {
+    height: auto;
+    width: 100%;
+    border-radius: 28px;
+    opacity: 1;
+    /* Changed from 0px to 1 for visibility */
+    border: 1px solid red;
+    padding: 41px 41px 61px 41px;
+    box-shadow: 0px 2.77px 2.21px 0px #00000005;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-heading {
+    font-family: var(--ageo-font);
+    font-size: 36px;
+    font-weight: 700;
+    margin-top: 41px;
+    margin-bottom: 61px;
+}
+
+.card-subdata {
+    font-family: var(--ageo-font);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+    height: 187px;
+    width: 270px;
+    /* Specified width */
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+/* video section css  */
+.video-heading {
+    width: 303.96px;
+    height: 77.2px;
+    top: 1714.14px;
+    left: 135px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: var(--dm-sans);
+    font-size: 22px;
+    font-weight: 600;
+    line-height: var(--SpacingSM);
+    text-align: left;
+    color: rgba(30, 14, 98, 1);
+}
+
+.video-content {
+    width: 322.05px;
+    height: 125.44px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: left;
+    color: rgba(21, 20, 57, 0.4);
+    margin-top: 20px;
+}
+
+.img-block {
+    position: relative;
+    background-color: #8A898E;
+    border-radius: 10px;
+    opacity: 0px;
+}
+
+.play-icons {
+    position: absolute;
+    width: 84px;
+    height: 84px;
+    background-color: rgba(72, 43, 231, 1);
+    border-radius: 50%;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.small-btn {
+    background: none;
+    padding: 13px 37px;
+    border: 2px solid rgba(235, 234, 237, 1);
+    margin-top: 50px;
+    border-radius: 100px;
+}
+
+.small-btn a {
+    font-family: var(--dm-sans);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    text-align: center;
+    color: #1E0E62;
+}
+
+/* clients section  */
+.client-box1 {
+    margin: 10px 20px 10px 100px;
+    padding: 10px 30px;
+    display: flex;
+    gap: 30px;
+
+}
+
+.client-box2 {
+    margin: 10px 100px 10px 20px;
+    padding: 10px 30px;
+    display: flex;
+    gap: 30px;
+
+}
+
+.client-img {
+    width: 70px;
+    height: 70px;
+}
+
+.client-data {
+    width: 307px;
+}
+
+.client-data h6 {
+    font-family: var(--dm-sans);
+    font-size: 18px;
+    font-weight: 500;
+    color: #0B1B35;
+}
+
+.client-data p {
+
+    font-family: var(--dm-sans);
+    font-size: 14px;
+    font-weight: 700;
+    color: #15143966;
+}
+
+/* team section css  */
+.team-box {
+
+    height: 370px;
+    border: 1px solid #EBEAED;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    overflow: hidden;
+}
+
+.team-name {
+    margin-top: 28px;
+    font-size: 22px;
+    font-weight: 500;
+    color: #1E0E62;
+}
+
+.team-position {
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #15143966;
+}
+
+.team-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.team-details img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.social-mediasection {
+    border-top: 1px solid #EBEAED;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.borders {
+    border-right: 1px solid #EBEAED;
+}
+
+.social-icons {
+    padding: 10px 50px;
+    cursor: pointer;
+}
+
+.social-icons i {
+    font-size: 22px;
+    color: #15143966;
+}
+.twitter:hover{
+    background-color: #1DA1F2;
+}
+.twitter:hover i{
+    color: var(--white-color);
+}
+.facebook:hover{
+    background-color: #1877F2;
+}
+.facebook:hover i{
+    color: var(--white-color);
+}
+.dribble:hover{
+    background-color: #ca2e6a;
+}
+.dribble:hover i{
+    color: var(--white-color);
+}
+
+
+
+
+
+
+
+
+/* newsletter css  */
+.newsletter-content {
+    font-family: var(--roboto-font) !important;
+    font-size: 18px;
+    color: var(--black-color);
+    font-weight: 400;
+}
+
+.news-email {
+    border: 1px solid #0000002E;
+    border-radius: 50px;
+    padding: 18px 67px;
+    margin-top: 23px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.subscriber {
+    width: 100%;
+    margin-top: 62px;
+    padding: 10px 0px;
+    background: var(--primary-color);
+    color: var(--white-color);
+    border: none;
+    font-family: var(--ageo-font);
+    border-radius: 10px;
+}
+
+/* footer-logo */
+.footer-sec {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+
+}
+
+.footer-logo {
+    width: 111px;
+    height: 23px;
+}
+
+.footer-sec p {
+    margin: 0;
+    height: 26px;
+    font-family: var(--dm-sans);
+    font-size: 16px;
+    font-weight: 400;
+    color: #1E0E62;
+    display: flex;
+    align-items: center;
+}
